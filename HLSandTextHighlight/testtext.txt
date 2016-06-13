@@ -1,0 +1,32 @@
+One major implementation that we're going to see with Swift 3.0 is the porting of Swift to other operating systems. According to Apple's Swift Evolution GitHub page, the Swift team intends to "make Swift available on other platforms and ensure that one can write portable Swift code that works properly on all of those platforms."
+
+That Swift is heading to Linux, and perhaps even Windows, is no secret. As soon as Apple made Swift open-source the potential was there to port it to other operating systems.
+
+Craig Federighi, Apple's Senior Vice President of Software Engineering, said: "We're certainly open to the community creating a Windows port, and there's a good foundation for that in that the LLVM and Clang environments that are foundations for building and compiling Swift have been ported to Windows. We fully support the community doing that port. Regarding us getting the [open-source] project off the ground, we wanted to focus our energy on our platforms and Linux to start."
+
+It certainly seems that taking Swift to other platforms is going to be part of WWDC: Linux for sure and Windows possibly. Microsoft, for its part, has brought Ubuntu Linux inside Windows 10, so we're seeing some convergence for developers on all platforms.
+
+Again, we should note that features Swift on Linux or Windows is not the same as having Xcode and the Apple SDK (software development kits) available. You won't be able to developer OS X (or "macOS" as it's rumoured to be renamed at WWDC 2016) and iOS apps.
+
+Read next: How to make an iOS game | Best Mac for app development
+
+Swift 3.0's new features: Welcoming Google to the fray
+Meanwhile, we've heard rumours that Google is preparing to drop its Java-based programming language for Android in favour of Swift (in part to sidestep increasing legal problems Google is having with Oracle, the owners of Java).
+
+This would be a bold step, and while it seems odd for fierce rivals like Google and Apple to share a base language, it'd be a move welcomed by developers. Swift is the "most loved" programming language, according to StackOverflow's 2015 survey. It makes sense in a lot of ways for Apple and Google to focus on promoting one underlying coding language and then work to develop their strengths inside that.
+
+Whether Google joins the Swift party is up to them, but we'll probably find out one way or the other at WWDC 2016.
+
+Swift 3.0 at WWDC 2016: New features
+Looking at the release notes for Swift 3.0, we can also see some things that the Swift team is looking at. Here are some highlights:
+
+Stabilize the binary interface (ABI). The Swift team is looking to create a more stable ABI allowing Swift to interact with different types of computers (at the binary level). Again, this points to Swift being ported to different computers.
+Complete generics. Swift uses generics (algorithms that are instatiated when needed) throughout its libraries, and Swift 3.0 will fully complete the implementation.
+Type system cleanup and documentation. Swift 3.0 will "Revisit and document the various subtyping and conversion rules in the type system, as well as their implementation in the compiler's type checker."
+Focus and refine the language. There's little detail here as to how,  but the Evoltuion Document notes that: "Swift's rapid development has meant that it has accumulated some language features and library APIs that don't fit well with the language as a whole. Swift 3 will remove or improve those features to provide better overall consistency for Swift."
+API Guidelines. Swift 3.0 provides new design guidelines for developers building APIs.
+An out-of-scope section details what Swift 3.0 won't be doing in the future; in particular, it won't be expanding out to C++ Interoperability, so C++ programmers won't be able to integrate their code in the same way as Objective-C designers.
+
+According to the document: "APIs. Interoperability with C++ libraries would enhance Swift's ability to work with existing libraries and APIs. However, C++ itself is a very complex language, and providing good interoperability with C++ is a significant undertaking that is out of scope for Swift 3.0."
+
+Read more: WWDC 2016: Dates, how to get tickets and what to expect

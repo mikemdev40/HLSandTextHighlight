@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,52 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WcC-nw-jZT">
+                                <rect key="frame" x="0.0" y="20" width="600" height="526"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="uPZ-Zz-kIv">
+                                <rect key="frame" x="233" y="554" width="134" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uf-qd-hOY">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="30"/>
+                                        <state key="normal" title="PLAY"/>
+                                        <connections>
+                                            <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mxh-dY-8H3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITc-Hu-MXH">
+                                        <rect key="frame" x="86" y="0.0" width="48" height="30"/>
+                                        <state key="normal" title="PAUSE"/>
+                                        <connections>
+                                            <action selector="pauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G0M-fc-BQ4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WcC-nw-jZT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2QF-d1-Hfw"/>
+                            <constraint firstItem="WcC-nw-jZT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BpN-2d-uf8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uPZ-Zz-kIv" secondAttribute="bottom" constant="16" id="Q58-89-wNa"/>
+                            <constraint firstItem="uPZ-Zz-kIv" firstAttribute="centerX" secondItem="WcC-nw-jZT" secondAttribute="centerX" id="RqL-oN-zrl"/>
+                            <constraint firstItem="uPZ-Zz-kIv" firstAttribute="top" secondItem="WcC-nw-jZT" secondAttribute="bottom" constant="8" id="bD1-Bb-GVI"/>
+                            <constraint firstAttribute="trailing" secondItem="WcC-nw-jZT" secondAttribute="trailing" id="dpp-it-sFN"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playButton" destination="0uf-qd-hOY" id="OmK-g7-OQC"/>
+                        <outlet property="textView" destination="WcC-nw-jZT" id="ATZ-xx-6Cv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="429"/>
         </scene>
     </scenes>
 </document>

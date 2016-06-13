@@ -13,6 +13,7 @@
 		7A20840F1D0E3FE600FDF8A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A20840D1D0E3FE600FDF8A7 /* Main.storyboard */; };
 		7A2084111D0E3FE600FDF8A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2084101D0E3FE600FDF8A7 /* Assets.xcassets */; };
 		7A2084141D0E3FE600FDF8A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2084121D0E3FE600FDF8A7 /* LaunchScreen.storyboard */; };
+		7A20841C1D0E411100FDF8A7 /* testtext.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7A20841B1D0E411100FDF8A7 /* testtext.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7A2084101D0E3FE600FDF8A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A2084131D0E3FE600FDF8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A2084151D0E3FE600FDF8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A20841B1D0E411100FDF8A7 /* testtext.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testtext.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				7A20840A1D0E3FE600FDF8A7 /* ViewController.h */,
 				7A20840B1D0E3FE600FDF8A7 /* ViewController.m */,
 				7A20840D1D0E3FE600FDF8A7 /* Main.storyboard */,
+				7A20841B1D0E411100FDF8A7 /* testtext.txt */,
 				7A2084101D0E3FE600FDF8A7 /* Assets.xcassets */,
 				7A2084121D0E3FE600FDF8A7 /* LaunchScreen.storyboard */,
 				7A2084151D0E3FE600FDF8A7 /* Info.plist */,
@@ -139,6 +142,7 @@
 				7A2084141D0E3FE600FDF8A7 /* LaunchScreen.storyboard in Resources */,
 				7A2084111D0E3FE600FDF8A7 /* Assets.xcassets in Resources */,
 				7A20840F1D0E3FE600FDF8A7 /* Main.storyboard in Resources */,
+				7A20841C1D0E411100FDF8A7 /* testtext.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
